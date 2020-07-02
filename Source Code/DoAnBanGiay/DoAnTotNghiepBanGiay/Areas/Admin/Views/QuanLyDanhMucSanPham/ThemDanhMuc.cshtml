@@ -1,0 +1,98 @@
+﻿@model Model.EF.DANHMUCSANPHAM
+
+@{
+    ViewBag.Title = "ThemDanhMuc";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@section sectionHead{
+
+    <style>
+        .form-group {
+            margin-bottom: 10px !important;
+            clear: both;
+            min-height: 35px;
+            position: relative;
+            padding-bottom: 5px !important;
+        }
+
+
+
+        .form-control123 {
+            display: block;
+            width: 60%;
+            height: 34px;
+            padding: 6px 12px;
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #555;
+            background-color: #fff;
+            background-image: none;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+            box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+            -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+            -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+            transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+            float: left;
+            margin-right: 10px;
+        }
+
+
+
+        .form-group1122 {
+            clear: both;
+            padding-top: 10px;
+            text-align: center;
+        }
+
+
+        #cke_txtnoidung {
+            margin-bottom: 10px;
+        }
+
+
+
+        .form-group {
+            padding-bottom: 25px !important;
+        }
+    </style>
+
+}
+
+
+@section sectiontitleheader{
+    THÊM DANH MỤC SẢN PHẨM
+}
+
+
+
+
+@using (Html.BeginForm("ThemDanhMuc", "QuanLyDanhMucSanPham", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <div class="form-group">
+            @Html.LabelFor(model => model.TenDanhMuc, htmlAttributes: new { @class = "control-laber col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.TenDanhMuc, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.TenDanhMuc)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.IDCha, htmlAttributes: new { @class = "control-laber col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.IDCha, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.IDCha)
+            </div>
+        </div>
+        <br />
+        <center>
+            <input type="submit" class="btn btn-danger" value="Thêm danh mục">
+        </center>
+    </fieldset>
+}

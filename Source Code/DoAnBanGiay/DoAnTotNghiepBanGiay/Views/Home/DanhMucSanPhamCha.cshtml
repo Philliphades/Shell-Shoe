@@ -1,0 +1,18 @@
+﻿@model List<Model.EF.DANHMUCSANPHAM>
+
+
+
+<ul class="menu">
+
+    @foreach(var item in Model)
+    { 
+    <li class="item1">
+        <a href="/DanhMuc/Index/@item.ID" class="active">
+                        @item.TenDanhMuc
+            <img class="arrow-img" src="/Assets/Client/images/arrow1.png" alt="">
+        </a>
+        @Html.Action("DanhMucSanPhamCon", "Home", new { id = @item.ID })
+        
+    </li>
+    }
+</ul>

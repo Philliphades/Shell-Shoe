@@ -1,0 +1,632 @@
+﻿.ct-body {
+    width: 1168px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.ct-body {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+user agent stylesheet div {
+    display: block;
+}
+
+Inherited from div.ct-right #entry .ct-right {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#entry .ct-right {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+Inherited from body body {
+    margin: 0;
+    padding: 0;
+    font: 300 13px 'Roboto', Arial, sans-serif;
+    color: #444;
+    background: #fff;
+}
+
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font: 300 13px 'Roboto', Arial, sans-serif;
+    color: #444;
+    background: #fff;
+}
+
+Inherited from html html {
+    font-size: 10px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+Pseudo ::before element .btn-group-vertical > .btn-group:after, .btn-group-vertical > .btn-group:before, .btn-toolbar:after, .btn-toolbar:before, .clearfix:after, .clearfix:before, .container-fluid:after, .container-fluid:before, .container:after, .container:before, .dl-horizontal dd:after, .dl-horizontal dd:before, .form-horizontal .form-group:after, .form-horizontal .form-group:before, .modal-footer:after, .modal-footer:before, .nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before, .pager:after, .pager:before, .panel-body:after, .panel-body:before, .row:after, .row:before {
+    display: table;
+    content: " ";
+}
+
+:after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+Pseudo ::after element .btn-group-vertical > .btn-group:after, .btn-toolbar:after, .clearfix:after, .container-fluid:after, .container:after, .dl-horizontal dd:after, .form-horizontal .form-group:after, .modal-footer:after, .nav:after, .navbar-collapse:after, .navbar-header:after, .navbar:after, .pager:after, .panel-body:after, .row:after {
+    clear: both;
+}
+
+.btn-group-vertical > .btn-group:after, .btn-group-vertical > .btn-group:before, .btn-toolbar:after, .btn-toolbar:before, .clearfix:after, .clearfix:before, .container-fluid:after, .container-fluid:before, .container:after, .container:before, .dl-horizontal dd:after, .dl-horizontal dd:before, .form-horizontal .form-group:after, .form-horizontal .form-group:before, .modal-footer:after, .modal-footer:before, .nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before, .pager:after, .pager:before, .panel-body:after, .panel-body:before, .row:after, .row:before {
+    display: table;
+    content: " ";
+}
+
+:after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#entry .ct-right {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#cart .ct-right {
+    width: 100%;
+}
+
+#detail .ct-right, #entry .ct-right {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#entry .ct-right {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#cart .ct-right {
+    width: 100%;
+}
+
+#detail .ct-right, #entry .ct-right {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.ct-right {
+    width: 74%;
+    float: right;
+    min-height: 400px;
+}
+
+.ct-right {
+    width: 74%;
+    float: right;
+    min-height: 400px;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+user agent stylesheet div {
+    display: block;
+}
+
+Inherited from div.ct-right #entry .ct-right {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#entry .ct-right {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+Inherited from body body {
+    margin: 0;
+    padding: 0;
+    font: 300 13px 'Roboto', Arial, sans-serif;
+    color: #444;
+    background: #fff;
+}
+
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font: 300 13px 'Roboto', Arial, sans-serif;
+    color: #444;
+    background: #fff;
+}
+
+Inherited from html html {
+    font-size: 10px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+Pseudo ::before element :after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+Pseudo ::after element :after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#cart .block-ct {
+    padding-top: 0;
+}
+
+#cart .block-ct {
+    padding-top: 0;
+}
+
+.block-ct {
+    padding: 0;
+}
+
+.block-ct {
+    padding: 0;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+user agent stylesheet div {
+    display: block;
+}
+
+Inherited from div.ct-right #entry .ct-right {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#entry .ct-right {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+Inherited from div.ct-right #entry .ct-right {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#entry .ct-right {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+Inherited from body body {
+    margin: 0;
+    padding: 0;
+    font: 300 13px 'Roboto', Arial, sans-serif;
+    color: #444;
+    background: #fff;
+}
+
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font: 300 13px 'Roboto', Arial, sans-serif;
+    color: #444;
+    background: #fff;
+}
+
+Inherited from html html {
+    font-size: 10px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+Pseudo ::before element :after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+Pseudo ::after element :after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#cart table {
+    border: #ddd solid 1px;
+    box-sizing: border-box;
+    width: 100%;
+    font-weight: 400;
+    text-align: center;
+}
+
+#cart table {
+    border: #ddd solid 1px;
+    box-sizing: border-box;
+    width: 100%;
+    font-weight: 400;
+    text-align: center;
+}
+
+table {
+    background-color: transparent;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+user agent stylesheet table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
+
+Inherited from div.ct-right #entry .ct-right {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#entry .ct-right {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+Inherited from div.ct-right #entry .ct-right {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#entry .ct-right {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+
+#cart table th {
+    padding: 15px 5px;
+    text-align: center;
+    background: #eee;
+    border: #ddd solid 1px;
+    border-bottom: #ddd solid 2px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #7a7a7a;
+}
+
+#cart table th {
+        padding: 10px 5px;
+    text-align: center;
+    background: #eee;
+    border: #ddd solid 1px;
+    border-bottom: #ddd solid 2px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #7a7a7a;
+}
+
+th {
+    text-align: left;
+}
+.border-left {
+    border-left: #ddd solid 1px;
+}
+td, th {
+    padding: 0;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+user agent stylesheet th {
+    font-weight: bold;
+}
+
+user agent stylesheet td, th {
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+Inherited from table #cart table {
+    border: #ddd solid 1px;
+    box-sizing: border-box;
+    width: 100%;
+    font-weight: 400;
+    text-align: center;
+}
+
+#cart table {
+    border: #ddd solid 1px;
+    box-sizing: border-box;
+    width: 100%;
+    font-weight: 400;
+    text-align: center;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+user agent stylesheet table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
+
+Inherited from div.ct-right #entry .ct-right {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#entry .ct-right {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+Inherited from div.ct-right #entry .ct-right {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#entry .ct-right {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+#cart .row-th {
+    margin: 0 0 10px;
+}
+
+    #cart .row-th div {
+        padding: 10px;
+        background: #CCCCCC;
+        font-weight: 500;
+        font-size: 14px;
+        text-align: center;
+        border: #fff solid 1px;
+        box-sizing: border-box;
+    }
+
+        #cart .row-th div:hover a, #cart .row-th div.active a, #cart .row-th div.done a {
+            color: #fff;
+        }
+
+        #cart .row-th div:hover a, #cart .row-th div.active a, #cart .row-th div.done a {
+            color: #fff;
+        }
+
+body a {
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+}
+
+
+#cart .row-th div:hover, #cart .row-th div.active {
+    background: #F97E76;
+    color: #fff;
+}
+
+    #cart .row-th div:hover a, #cart .row-th div.active a, #cart .row-th div.done a {
+        color: #fff;
+    }
+
+    #cart .row-th div:hover a, #cart .row-th div.active a, #cart .row-th div.done a {
+        color: #fff;
+    }
+
+a:hover {
+    text-decoration: none;
+    color: #20AF53;
+}
+
+a:focus, a:hover {
+    color: #23527c;
+    text-decoration: underline;
+}
+
+a:active, a:hover {
+    outline: 0;
+}
+
+.quantity input {
+    width: 45px;
+    height: 37px;
+    padding: 0 10px;
+    border: none;
+}
+
+.quantity {
+    position: relative;
+    display: inline-block;
+    padding: 0 6px 0 0;
+    border: #ddd solid 1px;
+}
+
+    quantity a:active, .quantity a:visited, .quantity a:focus {
+        text-decoration: none;
+        outline: 0;
+    }
+
+    .quantity a:active, .quantity a:visited, .quantity a:focus {
+        text-decoration: none;
+        outline: 0;
+    }
+
+    .quantity .minus {
+        background: #666;
+        color: #fff;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 3px 4px;
+        line-height: 13px;
+        font-size: 18px;
+    }
+
+    .quantity .plus {
+        background: #666;
+        color: #fff;
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 0;
+        padding: 2px 4px;
+        line-height: 13px;
+        font-size: 32px;
+    }
+    tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+#cart table {
+    border: #ddd solid 1px;
+    box-sizing: border-box;
+    width: 100%;
+    font-weight: 400;
+    text-align: center;
+}#cart table tr {
+    border-bottom: #ddd solid 1px;
+}#cart table td {
+    padding: 5px;
+}
+ #cart table {
+    border: #ddd solid 1px;
+    box-sizing: border-box;
+    width: 100%;
+    font-weight: 400;
+    text-align: center;
+}
+ #cart table tr {
+    border-bottom: #ddd solid 1px;
+}
+
+ .price {
+    color: #20AF53;
+    font-size: 15px;
+    font-weight: 900;
+    padding-top: 10px;
+}
+
+ .cart-bottom {
+    width: 100%;
+    margin: 30px 0 15px 0;
+}.cart-bottom .shopping {
+    background: #666;
+    color: #fff;
+    padding: 10px;
+    float: left;
+    font-size: 13px;
+    outline: none;
+}
+
+ .cart-bottom .continue {
+    background: #666;
+    color: #fff;
+    padding: 10px;
+    float: right;
+    font-size: 13px;
+    outline: none;
+}
+
+ .cart-bottom .continue:hover, .cart-bottom .shopping:hover {
+    background: #20AF53;
+}
+.cart-bottom .continue:hover, .cart-bottom .shopping:hover {
+    background: #DF1F26;
+}
+.shopping:hover {
+    background: #20AF53 !important;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+#cart .row-th div {
+    padding: 10px;
+    background: #CCCCCC;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    border: #fff solid 1px;
+    box-sizing: border-box;
+}

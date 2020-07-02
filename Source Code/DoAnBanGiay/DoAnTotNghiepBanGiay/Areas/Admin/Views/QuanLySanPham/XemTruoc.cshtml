@@ -1,0 +1,356 @@
+﻿@model Model.EF.SANPHAM
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_layoutClient1.cshtml";
+    var vbsize = (List<Model.EF.COGIAY>)ViewBag.vb_size;
+
+
+
+
+}
+
+
+
+@section sectionHeader{
+
+
+    <title>@Model.TenSP</title>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            //Javascript choose size
+            $('.item-attrxx').find('.labelxx').on('click', function () {
+                $('.item-attrxx').removeClass('checkxx');
+                $(this).parent('.item-attrxx').addClass('checkxx');
+                $('.item-attrxx').removeAttr('id');
+                $(this).parent('.item-attrxx').attr('id', "checkProduct");
+            });
+
+
+            //javascript add to cart
+            $('.get-cart-in').off('click').on('click', function (e) {
+                e.preventDefault();
+                var checkitem = $(document).find('.sizeProduct').find('.item-attrxx');
+                //var total = parseInt($('#txtQuantity').val());
+
+
+
+                if ((checkitem.hasClass('checkxx') == false)) {
+                    $(document).find('#popuperror').fadeIn(100);
+
+                }
+                else {
+                    if (checkitem.hasClass('checkxx')) {
+                        var size = parseInt($("#checkProduct").find('.labelxx').html());
+                        var idsanpham = parseInt($("#checkProduct").find('.labelsp').html());
+
+                        window.location.href = '/GioHang/AddToCart?idproduct=' + idsanpham + '&size=' + size + '&soluong=1';
+                    }
+                }
+            })
+
+
+
+            //Close popup
+
+            $('#popuperror_close').off('click').on('click', function (e) {
+                e.preventDefault();
+                $(document).find('#popuperror').fadeOut('fast');
+            });
+        });
+
+
+    </script>
+
+
+
+
+
+    <style>
+        .item-attrxx {
+            width: auto;
+            border: 1px solid #ccc;
+            background: #F2F2F2;
+            text-align: center;
+            display: block;
+            float: left;
+            cursor: pointer;
+            position: relative;
+            font-size: 13px;
+            margin-right: 10px;
+            margin-bottom: 5px;
+            padding: 1px;
+        }
+
+            .item-attrxx > .labelxx {
+                display: block;
+                height: 26px;
+                min-width: 26px;
+                line-height: 26px;
+                padding: 0 2px;
+            }
+
+        .sizeProduct {
+            float: right;
+            width: 50%;
+            text-align: center;
+            height: 1em;
+        }
+
+        .checkxx {
+            box-shadow: 0px 0px 2px 2px #FF6363;
+        }
+
+        .button-add-to-cart {
+            clear: both;
+            margin: 5px auto 5px;
+            height: 40px;
+            position: relative;
+            float: left;
+        }
+
+        .mask_cart {
+            width: 100%;
+            height: 100%;
+            background: #333;
+            display: none;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 2;
+            opacity: 0;
+        }
+
+        .quantity input {
+            width: 45px;
+            height: 37px;
+            padding: 0 10px;
+            border: #ddd solid 1px;
+        }
+
+        .quantity .minus {
+            background: #666;
+            color: #fff;
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 3px 4px;
+            line-height: 13px;
+            font-size: 18px;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            opacity: 0 !important;
+            width: 0px !important;
+            height: 0px !important;
+        }
+
+
+        /*POPUP*/
+        #popuperror {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
+
+
+        .pupuperror_mask {
+            position: fixed;
+            width: 100%;
+            height: 100% !important;
+            top: 0px;
+            left: 0;
+            text-align: center;
+            background: #666;
+            display: block;
+            z-index: 1;
+            opacity: 0.8;
+        }
+
+        .popuperror_box {
+            width: 500px;
+            height: 200px;
+            display: block;
+            background: #fff;
+            margin: 120px auto;
+            opacity: 1;
+            z-index: 100 !important;
+            position: fixed;
+            left: 32%;
+        }
+
+        #popuperror_close {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            border: 1px solid #ddd;
+            padding: 5px 20px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+            #popuperror_close:hover {
+                background: #333;
+                color: #fff;
+            }
+    </style>
+
+
+
+}
+<div id="popuperror">
+    <div class="popuperror_box">
+        <div style="width: 100%; height: 50px; text-align: center; line-height: 50px; font-weight: 600; background: #333; color: #fff;">
+            THÔNG BÁO
+        </div>
+
+
+        <div style=" width: 100%; height: 400px; text-align: center; line-height: 120px; font-weight: 600; color: #333;">
+            Chọn cỡ giày trước khi thêm vào giỏ hàng!
+        </div>
+        <span id="popuperror_close">
+            OK
+        </span>
+    </div>
+    <div class="pupuperror_mask"></div>
+
+</div>
+
+<div class=" single_top">
+    <div class="single_grid">
+        <div class="grid images_3_of_2">
+            <ul id="etalage">
+                <li>
+                    @*<a href="optionallink.html">*@
+                    <img class="etalage_thumb_image" src="@Model.AnhDaiDien" class="img-responsive" title="" />
+                    <img class="etalage_source_image" src="@Model.AnhDaiDien" class="img-responsive" title="" />
+                    @*</a>*@
+                </li>
+            </ul>
+            <div class="clearfix"> </div>
+        </div>
+        <div class="desc1 span_3_of_2">
+
+            <h4>@Model.TenSP</h4>
+            <div class="cart-b">
+                <div class="left-n ">
+                    @if (Model.GiaKhuyenMai.HasValue)
+                    {
+                        <div class="dolor-grid">
+                            <span class="actual">@Model.GiaKhuyenMai.Value.ToString("N0") VNĐ</span>
+                            <span class="reducedfrom1">@Model.Gia.Value.ToString("N0") VNĐ</span>
+                        </div>
+                    }
+                    else
+                    {
+                        <span class="actual">@Model.Gia.Value.ToString("N0") VNĐ</span>
+                    }
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+            <h6>
+                Các cỡ hiện có:
+            </h6>
+            <div class="sizeProduct">
+
+                @if (vbsize.Count == 0)
+                {
+                    <span style="color: #F97E76;font-size: 1.7em;font-weight: 600;">
+                        Hết cỡ <i class="fa fa-times" aria-hidden="true"></i>
+                    </span>
+                }
+                else
+                {
+                    foreach (var item1 in vbsize)
+                    {
+                        <label class="item-attrxx" title="@item1.Co">
+                            <input type="radio" name="cogiay__" value="@item1.Co">
+                            <span class="labelxx">
+                                @item1.Co
+                            </span>
+
+                            <span class="labelsp" style="display: none;">
+                                @item1.IDSP
+                            </span>
+                        </label>
+                    }
+                }
+
+            </div>
+            @*<div class="button-add-to-cart">
+                    <h6>
+                        Chọn số lượng:
+                    </h6>
+                    <div class="sizeProduct">
+                        <input type="text" value="1" id="txtQuantity" class="quantity" style="float: right; width: 25%;">
+                    </div>
+                </div>*@
+            <div class="button-add-to-cart">
+                @if (vbsize.Count != 0)
+                {
+                    <a class="now-get get-cart-in" href="#">THÊM VÀO GIỎ HÀNG</a>
+                }
+            </div>
+            <p>Mô tả: @Html.Raw(@Model.MoTaSP)</p>
+
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+
+    <div class="toogle">
+        <h3 class="m_3">THÔNG TIN SẢN PHẨM</h3>
+        <p class="m_text">@Html.Raw(@Model.ChiTietSP)</p>
+    </div>
+
+
+    <div id="fb-root" style="margin-top: 50px;"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.5&appId=409801852540765";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="fb-like" data-href="nghihung.com/SanPham/ChiTiet/@Model.Metatitle/@Model.ID" title="" data-width="100%" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+
+    <div class="fb-comments" data-href="nghihung.com/SanPham/ChiTiet/@Model.Metatitle/@Model.ID" data-width="100%" data-numposts="5" data-colorscheme="light"></div>
+
+
+    <script type="text/javascript">
+        $(window).load(function () {
+            $("#flexiselDemo1").flexisel({
+                visibleItems: 5,
+                animationSpeed: 1000,
+                autoPlay: true,
+                autoPlaySpeed: 3000,
+                pauseOnHover: true,
+                enableResponsiveBreakpoints: true,
+                responsiveBreakpoints: {
+                    portrait: {
+                        changePoint: 480,
+                        visibleItems: 1
+                    },
+                    landscape: {
+                        changePoint: 640,
+                        visibleItems: 2
+                    },
+                    tablet: {
+                        changePoint: 768,
+                        visibleItems: 3
+                    }
+                }
+            });
+
+        });
+    </script>
+    <script type="text/javascript" src="/Assets/Client/js/jquery.flexisel.js"></script>
+</div>

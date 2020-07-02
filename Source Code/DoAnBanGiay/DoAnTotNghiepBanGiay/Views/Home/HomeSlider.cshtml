@@ -1,0 +1,26 @@
+﻿@model List<Model.EF.SLIDE>
+
+
+@*PARTIAL VIEW*@
+<div class="wrap-in">
+    <div class="wmuSlider example1 slide-grid" style="overflow: hidden; height: 360px; max-height: 360px;">
+        @foreach (var item in Model)
+        {
+            <a href="@item.Link">
+                <div class="wmuSliderWrapper">
+                    <article>
+                        <img src="@item.Anh" alt="@item.TenSlide" />
+                    </article>
+                </div>
+            </a>
+        }
+        <script src="/Assets/Client/js/jquery.wmuSlider.js"></script>
+        <script>
+            $('.example1').wmuSlider();
+        </script>
+        <a class="wmuSliderPrev">Previous</a>
+        <a class="wmuSliderNext">Next</a>
+        <ul class="wmuSliderPagination">
+        </ul>
+    </div>
+</div>

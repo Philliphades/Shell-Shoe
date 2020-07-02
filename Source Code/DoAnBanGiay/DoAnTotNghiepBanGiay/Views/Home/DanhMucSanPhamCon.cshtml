@@ -1,0 +1,14 @@
+﻿@model List<Model.EF.DANHMUCSANPHAM>
+
+
+
+<ul class="cute" style="display: block; overflow: hidden;">
+    @foreach (var item1 in Model)
+    {
+        <li class="subitem1">
+            <a href="/DanhMuc/Index/@item1.ID">
+                @item1.TenDanhMuc
+            </a>
+        </li>
+    }
+</ul>

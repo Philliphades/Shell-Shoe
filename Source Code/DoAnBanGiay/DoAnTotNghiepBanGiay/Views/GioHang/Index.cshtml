@@ -1,0 +1,286 @@
+﻿@model List<DoAnTotNghiepBanGiay.Models.CartItem>
+
+
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_layoutClient.cshtml";
+    decimal vbtongtien = (decimal)ViewBag.vb_tongtien;
+}
+
+
+@section sectionHeader{
+
+
+    <link href="~/Assets/Client/css/More/MyCSS___.css" rel="stylesheet" />
+
+
+<link href="~/Assets/Client/css/More/Wstyle1.css" rel="stylesheet" />
+    <script>
+
+
+        $(document).ready(function () {
+
+
+
+
+            $('#pradd').click(function (e) {
+                e.preventDefault();
+                var maxquantity = parseInt($('#prquantity').val());
+                var max = 10;
+                var min = 1;
+                if (maxquantity > max)
+                { max = max }
+                else (max = maxquantity)
+
+
+
+                e.preventDefault();
+                var cur = parseInt($('#txtQuantity').val());
+                if (cur >= max) {
+                    cur = max;
+                }
+                else {
+                    if (cur < 1) {
+
+                        cur = 1;
+                    }
+
+                    else {
+                        if (cur < max && cur > 0) {
+                            cur = cur + 1;
+                        }
+                    }
+                }
+                $('#txtQuantity').val(cur);
+            });
+
+
+            $('#prsub').click(function (e) {
+                e.preventDefault();
+                var maxquantity = 10;
+                var max = 10;
+                var min = 1;
+                if (maxquantity > max)
+                { max = max }
+                else (max = maxquantity)
+
+
+
+
+
+                var cur = parseInt($('#txtQuantity').val());
+                if (cur <= 1) {
+                    cur = 1;
+                }
+                else {
+                    if (cur > max) {
+                        cur = max;
+                    }
+                    else { cur = cur - 1 }
+                }
+                $('#txtQuantity').val(cur);
+            });
+
+
+
+            $('a#cartclick').off('click').on('click', function (e) {
+                e.preventDefault();
+                var idpr = $('#prid').val();
+                var slpr = $('#txtQuantity').val();
+                window.location.href = '/Cart/AddToCart?productid=' + idpr + '&quantity=' + slpr;
+            });
+
+
+
+
+
+            //Function + - of cart
+
+            $(document).find('.minus-add').click(function (e) {
+                e.preventDefault();
+                var maxquantity = 10;
+                var max = 10;
+                var min = 1;
+                if (maxquantity > max)
+                { max = max }
+                else (max = maxquantity)
+
+                var cur = parseInt($(this).parent('.quantity').find('.quantity-text').val());
+                if (cur >= max) {
+                    cur = max;
+                }
+                else {
+                    if (cur < 1) {
+
+                        cur = 1;
+                    }
+
+                    else {
+                        if (cur < max && cur > 0) {
+                            cur = cur + 1;
+                        }
+                    }
+                }
+                $(this).parent('.quantity').find('.quantity-text').val(cur);
+            });
+
+
+            $(document).find('.plus-sub').click(function (e) {
+                e.preventDefault();
+                var maxquantity = parseInt($(this).parent('.quantity').find('.prquantity').val());
+                var max = 10;
+                var min = 1;
+                if (maxquantity > max)
+                { max = max }
+                else (max = maxquantity)
+
+
+                var cur = parseInt($(this).parent('.quantity').find('.quantity-text').val());
+                if (cur <= 1) {
+                    cur = 1;
+                }
+                else {
+                    if (cur > max) {
+                        cur = max;
+                    }
+                    else { cur = cur - 1 }
+                }
+                $(this).parent('.quantity').find('.quantity-text').val(cur);
+            });
+
+
+        });
+
+    </script>
+}
+
+@section jsFooter{
+
+    <script src="/Assets/Client/js/controller/cartController.js"></script>
+}
+
+
+
+<div class="content">
+    <div class="ct-body clearfix" id="cart" style="margin: 30px auto">
+        <div class="ct-right">
+            @if (Model.Count != 0)
+            {
+                <div class="block products clearfix">
+                    <div class="block-ct">
+                        <div class="cart-top clearfix">
+                            <div class="row row-th">
+                                <div class="col-md-3 active"><a href="#">Giỏ hàng</a></div>
+                                <div class="col-md-3"><a href="#">Thông tin khách hàng</a></div>
+                                <div class="col-md-3"><a href="#">Xem lại đơn hàng</a></div>
+                                <div class="col-md-3"><a href="#">Hoàn thành</a></div>
+                            </div><!--End row-->
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th style=" width: 160px;">Ảnh</th>
+                                        <th>Cỡ</th>
+                                        <th style="width: 150px;">Số lượng</th>
+                                        <th>Đơn giá</th>
+                                        <th>Tổng tiền</th>
+                                        <th></th>
+                                    </tr>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr class="cartItem" data-id="@item.Product.ID">
+                                            <td>
+                                                <a href="/SanPham/ChiTiet/@item.Product.ID" target="_blank" title="@item.Product.TenSP">
+                                                    <img src="@item.Product.AnhDaiDien" width="100" alt="@item.Product.TenSP">
+
+                                                </a>
+                                                @*<img src="@item.Product.AvatarImage" width="174" alt="">*@
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    @*<a href="/Product/ViewDetailProduct/@item.Product.Metatitle/@item.Product.ID">@item.Product.TenSP</a>*@
+                                                    @item.CoGiay
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <div class="quantity">
+
+                                                    @*<input type="text" class="prquantity" style="display:none" name="name" value=@item.Product.Quantity />*@
+                                                    <input type="text" value="@item.Quantity" data-id="@item.Product.ID" class="quantity-text" readonly="readonly">
+                                                    <a href="#" class="minus minus-add">+</a>
+                                                    <a href="#" class="plus plus-sub">-</a>
+
+                                                </div><!--End quantity-->
+                                            </td>
+
+                                            @*-----------ĐƠN GIÁ----------------------*@
+                                            @if (item.Product.GiaKhuyenMai.HasValue)
+                                            {
+                                                <td style="text-align:right;"><span class="price row-price" data-price="@item.Product.GiaKhuyenMai.Value.ToString("N0")">@item.Product.GiaKhuyenMai.Value.ToString("N0")</span></td>
+                                            }
+                                            else
+                                            {
+                                                <td style="text-align:right;"><span class="price row-price" data-price="@item.Product.Gia.Value.ToString("N0")">@item.Product.Gia.Value.ToString("N0")</span></td>
+                                            }
+
+                                            @*-----------Thành Tiền----------------------*@
+                                            @if (item.Product.GiaKhuyenMai.HasValue)
+                                            {
+                                                <td style="text-align:right;"><span class="price row-total" data-total="@(@item.Quantity * @item.Product.GiaKhuyenMai)">@((@item.Quantity * @item.Product.GiaKhuyenMai).Value.ToString("N0"))</span></td>
+                                            }
+                                            else
+                                            {
+                                                <td style="text-align:right;"><span class="price row-total" data-total="@(@item.Quantity * @item.Product.GiaKhuyenMai)">@((@item.Quantity * @item.Product.Gia).Value.ToString("N0"))</span></td>
+                                            }
+
+                                            <td><a href="#" class="btnDelete" data-id="@item.Product.ID"><i class="fa fa-trash fa-2x"></i></a></td>
+                                        </tr>
+                                    }
+
+                                    <tr>
+                                        <td colspan="2">&nbsp;</td>
+                                        <td colspan="4" style="text-align:left;" class="border-left">
+                                            <span class="amount">
+                                                Tổng tiền
+                                                @*TỔNG GIÁ TRỊ*@
+                                            </span>
+                                            <span style="color: #ea3a3c; float: right; right: 10px; text-transform: uppercase; font-size: 18px; font-weight: 600;">
+                                                @vbtongtien.ToString("N0") VNĐ
+                                            </span>
+
+                                            <span class="price total-all" data-total-all="">
+                                            </span>
+                                        </td>
+
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div><!--End cart-top-->
+                        <div class="cart-bottom clearfix">
+
+                            <a href="/" class="shopping" style="border-right: 1px solid white;"><i class="fa fa-chevron-circle-left" style="padding-right: 5px;"></i>Tiếp tục mua</a>
+                            &nbsp;
+                            <a href="#" id="btnUpdateCart" class="shopping" style="border-right: 1px solid white;"><i class="fa fa-refresh" style="padding-right: 5px;"></i>Cập nhật</a>
+                            &nbsp;
+                            <a href="#" id="btnDeleteAll" class="shopping"><i class="fa fa-close" style="padding-right: 5px;"></i>Xóa tất</a>
+                            &nbsp;
+                            <a href="/GioHang/ThongTinKhachHang" class="continue">Tiếp tục thanh toán<i class="fa fa-chevron-circle-right" style="padding-left: 5px;"></i></a>
+
+                        </div><!--End cart-bottom-->
+
+                    </div><!--End block-ct-->
+                </div><!--End block-->
+
+            }
+            else
+            {
+                <div class="cart-bottom clearfix">
+                    <h2> Giỏ hàng của bạn hiện giờ chưa có sản phẩm!</h2><br /><br />
+                    <a href="/" class="shopping" style="border-right: 1px solid white; background: #ea3a3c !important;"><i class="fa fa-chevron-circle-left" style="padding-right: 5px"></i>Quay lại mua hàng</a>
+                </div>
+            }
+
+        </div>
+    </div>
+</div>

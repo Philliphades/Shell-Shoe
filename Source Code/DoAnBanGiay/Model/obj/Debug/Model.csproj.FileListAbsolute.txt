@@ -1,0 +1,28 @@
+E:\Dropbox\Nam 4\Do an tot nghiep\DoAnTotNghiepBanGiay\Model\bin\Debug\Model.dll.config
+E:\Dropbox\Nam 4\Do an tot nghiep\DoAnTotNghiepBanGiay\Model\bin\Debug\Model.dll
+E:\Dropbox\Nam 4\Do an tot nghiep\DoAnTotNghiepBanGiay\Model\bin\Debug\Model.pdb
+E:\Dropbox\Nam 4\Do an tot nghiep\DoAnTotNghiepBanGiay\Model\bin\Debug\EntityFramework.dll
+E:\Dropbox\Nam 4\Do an tot nghiep\DoAnTotNghiepBanGiay\Model\bin\Debug\EntityFramework.SqlServer.dll
+E:\Dropbox\Nam 4\Do an tot nghiep\DoAnTotNghiepBanGiay\Model\bin\Debug\PagedList.dll
+E:\Dropbox\Nam 4\Do an tot nghiep\DoAnTotNghiepBanGiay\Model\bin\Debug\PagedList.Mvc.dll
+E:\Dropbox\Nam 4\Do an tot nghiep\DoAnTotNghiepBanGiay\Model\bin\Debug\EntityFramework.xml
+E:\Dropbox\Nam 4\Do an tot nghiep\DoAnTotNghiepBanGiay\Model\bin\Debug\EntityFramework.SqlServer.xml
+E:\Dropbox\Nam 4\Do an tot nghiep\DoAnTotNghiepBanGiay\Model\bin\Debug\PagedList.xml
+E:\Dropbox\Nam 4\Do an tot nghiep\DoAnTotNghiepBanGiay\Model\bin\Debug\PagedList.Mvc.xml
+E:\Dropbox\Nam 4\Do an tot nghiep\DoAnTotNghiepBanGiay\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+E:\Dropbox\Nam 4\Do an tot nghiep\DoAnTotNghiepBanGiay\Model\obj\Debug\Model.dll
+E:\Dropbox\Nam 4\Do an tot nghiep\DoAnTotNghiepBanGiay\Model\obj\Debug\Model.pdb
+E:\Documents\DoAn\Nam4\web\Do an tot nghiep - Nguyen Van Hau\Do an tot nghiep - Nguyen Van Hau\01 - Ma nguon\DoAnTotNghiepBanGiay\Model\bin\Debug\Model.dll.config
+E:\Documents\DoAn\Nam4\web\Do an tot nghiep - Nguyen Van Hau\Do an tot nghiep - Nguyen Van Hau\01 - Ma nguon\DoAnTotNghiepBanGiay\Model\bin\Debug\Model.dll
+E:\Documents\DoAn\Nam4\web\Do an tot nghiep - Nguyen Van Hau\Do an tot nghiep - Nguyen Van Hau\01 - Ma nguon\DoAnTotNghiepBanGiay\Model\bin\Debug\Model.pdb
+E:\Documents\DoAn\Nam4\web\Do an tot nghiep - Nguyen Van Hau\Do an tot nghiep - Nguyen Van Hau\01 - Ma nguon\DoAnTotNghiepBanGiay\Model\bin\Debug\EntityFramework.dll
+E:\Documents\DoAn\Nam4\web\Do an tot nghiep - Nguyen Van Hau\Do an tot nghiep - Nguyen Van Hau\01 - Ma nguon\DoAnTotNghiepBanGiay\Model\bin\Debug\EntityFramework.SqlServer.dll
+E:\Documents\DoAn\Nam4\web\Do an tot nghiep - Nguyen Van Hau\Do an tot nghiep - Nguyen Van Hau\01 - Ma nguon\DoAnTotNghiepBanGiay\Model\bin\Debug\PagedList.dll
+E:\Documents\DoAn\Nam4\web\Do an tot nghiep - Nguyen Van Hau\Do an tot nghiep - Nguyen Van Hau\01 - Ma nguon\DoAnTotNghiepBanGiay\Model\bin\Debug\PagedList.Mvc.dll
+E:\Documents\DoAn\Nam4\web\Do an tot nghiep - Nguyen Van Hau\Do an tot nghiep - Nguyen Van Hau\01 - Ma nguon\DoAnTotNghiepBanGiay\Model\bin\Debug\EntityFramework.xml
+E:\Documents\DoAn\Nam4\web\Do an tot nghiep - Nguyen Van Hau\Do an tot nghiep - Nguyen Van Hau\01 - Ma nguon\DoAnTotNghiepBanGiay\Model\bin\Debug\EntityFramework.SqlServer.xml
+E:\Documents\DoAn\Nam4\web\Do an tot nghiep - Nguyen Van Hau\Do an tot nghiep - Nguyen Van Hau\01 - Ma nguon\DoAnTotNghiepBanGiay\Model\bin\Debug\PagedList.xml
+E:\Documents\DoAn\Nam4\web\Do an tot nghiep - Nguyen Van Hau\Do an tot nghiep - Nguyen Van Hau\01 - Ma nguon\DoAnTotNghiepBanGiay\Model\bin\Debug\PagedList.Mvc.xml
+E:\Documents\DoAn\Nam4\web\Do an tot nghiep - Nguyen Van Hau\Do an tot nghiep - Nguyen Van Hau\01 - Ma nguon\DoAnTotNghiepBanGiay\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+E:\Documents\DoAn\Nam4\web\Do an tot nghiep - Nguyen Van Hau\Do an tot nghiep - Nguyen Van Hau\01 - Ma nguon\DoAnTotNghiepBanGiay\Model\obj\Debug\Model.dll
+E:\Documents\DoAn\Nam4\web\Do an tot nghiep - Nguyen Van Hau\Do an tot nghiep - Nguyen Van Hau\01 - Ma nguon\DoAnTotNghiepBanGiay\Model\obj\Debug\Model.pdb

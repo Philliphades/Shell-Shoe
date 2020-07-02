@@ -1,0 +1,96 @@
+﻿@model List<DoAnTotNghiepBanGiay.Models.CartItem>
+
+
+
+@{
+    ViewBag.Title = "ThanhCong";
+    Layout = "~/Views/Shared/_layoutClient.cshtml";
+}
+
+@section sectionHeader{
+
+
+    <style>
+        .content {
+            min-height: 300px !important;
+        }
+
+
+        .continue:hover {
+            background: #20AF53 !important;
+        }
+
+        .continue {
+            background: #ea3a3c !important;
+            transition: 0.3s !important;
+            border-right: 1px solid white;
+        }
+
+        a {
+            transition: 0.3s;
+        }
+    </style>
+
+<link href="~/Assets/Client/css/More/Wstyle1.css" rel="stylesheet" />
+<link href="~/Assets/Client/css/More/MyCSS___.css" rel="stylesheet" />
+
+
+}
+
+
+@section jsFooter{
+
+    <script src="/Assets/Client/js/controller/cartController.js"></script>
+}
+
+
+
+
+<div class="content">
+    <div class="ct-body clearfix" id="cart" style="margin: 30px auto">
+
+
+
+        <div class="ct-right">
+            @if (Model.Count != 0)
+            {
+
+                <div class="block products clearfix">
+                    <div class="block-ct">
+                        <div class="cart-top clearfix">
+                            <div class="row row-th">
+                                <div class="col-md-3"><a href="#">Giỏ hàng</a></div>
+                                <div class="col-md-3 "><a href="#">Thông tin khách hàng</a></div>
+                                <div class="col-md-3 "><a href="#">Xem lại đơn hàng</a></div>
+                                <div class="col-md-3 active"><a href="#">Hoàn thành</a></div>
+                            </div><!--End row-->
+                            <div>
+                                <h3>
+                                    Chúc mừng bạn đã mua hàng thành công!<br />
+                                    Chúng tôi sẽ gọi lại cho bạn sau 5 phút để xác minh.
+                                </h3>
+                            </div>
+
+                        </div><!--End cart-top-->
+                        <div class="cart-bottom clearfix">
+
+
+                            <a href="/GioHang/ThanhCong1" class="continue">Hoàn tất<i class="fa fa-check"></i></a>
+                            @*<button class="continue" type="su">Hoàn tất<i class="fa fa-check-circle"></button>*@
+                        </div><!--End cart-bottom-->
+
+                    </div><!--End block-ct-->
+                </div><!--End block-->
+
+            }
+            else
+            {
+                <div class="cart-bottom clearfix">
+                    <h2> Giỏ hàng của bạn hiện giờ chưa có sản phẩm!</h2><br /><br />
+                    <a href="/" class="shopping" style="border-right: 1px solid white;"><i class="fa fa-chevron-circle-left"></i>Quay lại mua hàng</a>
+                </div>
+            }
+
+        </div>
+    </div>
+</div>

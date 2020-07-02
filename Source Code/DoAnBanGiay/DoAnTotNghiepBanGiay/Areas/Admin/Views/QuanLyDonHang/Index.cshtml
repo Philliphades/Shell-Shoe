@@ -1,0 +1,92 @@
+﻿
+@model PagedList.IPagedList<Model.ViewModel.OrderViewModelForIndex>
+@using PagedList.Mvc;
+
+
+@{
+    ViewBag.Title = "Huy don hang";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+
+<div class="=row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4>
+                    DANH SÁCH ĐƠN HÀNG CHỜ DUYỆT
+                </h4>
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+
+                @using (Html.BeginForm("Index", "QuanLyDonHang", FormMethod.Get))
+                {
+                    <div class="row" style="padding-bottom: 10px!important">
+                        <div class="col-lg-8">
+                            <div class="input-group margin">
+                                <input type="text" class="form-control" value="@ViewBag.SearchString" name="searchString" placeholder="Nhập tên khách hàng hoặc mã đơn hàng để tìm kiếm...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-info btn-flat" type="submit">Tìm</button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                }
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th>Tên khách hàng</th>
+                                <th>Địa chỉ</th>
+                                <th>Số lượng sản phẩm</th>
+                                <th>Tổng tiền</th>
+                                <th>Chức năng</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr id="row_@item.orderID">
+
+                                    <td class="tb_tenbanghi">
+                                        @item.CustomerName
+                                    </td>
+                                    <td>
+                                        @item.CustomerAddress
+                                    </td>
+
+                                    <td>@item.TotalQuantity</td>
+                                    <td> @item.TotalPrice</td>
+                                    <td>
+                                        <a href="/Admin/QuanLyDonHang/ChiTiet/@item.orderID" target="_blank" class="clink_llll" title="Xem chi tiết">Xem chi tiết</a>
+                                        <br />
+                                        @Ajax.ActionLink("Xuất đơn hàng", "XuatDonHang", new { @id = item.orderID }, new AjaxOptions
+                                            {
+                                                Confirm = "Bạn có chắc chắn muốn xuất đơn hàng này?",
+                                                OnComplete = "$('#row_" + @item.orderID + "').fadeOut(300)",
+                                                HttpMethod = "Post"
+                                            }, new { @class = "clink_rrrr", @title = "Xuất đơn hàng này", area = "Admin" })
+                                        <br />
+                                        @Ajax.ActionLink("Hủy đơn hàng", "HuyDonHang", new { @id = item.orderID }, new AjaxOptions
+                                            {
+                                                Confirm = "Bạn có chắc chắn muốn hủy đơn hàng này?",
+                                                OnComplete = "$('#row_" + @item.orderID + "').fadeOut(300)",
+                                                HttpMethod = "Post"
+                                            }, new { @class = "clink_rrrr", @title = "Hủy đơn hàng này", area = "Admin" })
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+
+                    @Html.PagedListPager(Model, page => Url.Action("Index", new { page, @searchString = @ViewBag.searchstring }))
+                </div>
+                <!-- /.table-responsive -->
+            </div>
+            <!-- /.panel-body -->
+        </div>
+        <!-- /.panel -->
+    </div>
+</div>

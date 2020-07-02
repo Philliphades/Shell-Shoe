@@ -1,0 +1,56 @@
+﻿@model List<Model.EF.SANPHAM>
+
+@section sectionHeader{
+    <style>
+        .sanphamnoibat:hover {
+            border-bottom: 1px solid;
+        }
+
+        .index_of_item {
+            border-radius: 16px;
+            color: #fff;
+            background: #ff0000;
+            position: absolute;
+            top: 2%;
+            right: 2%;
+        }
+    </style>
+
+}
+
+
+@foreach (var item in Model)
+{
+    var stt = 1 + Model.FindIndex(x => x.ID == item.ID);
+
+    <div class="col-md-12 sanphamnoibat" style=" float: none;overflow: hidden; max-height: 190px; clear: both; padding: 0px; border-bottom: 1px solid #ddd">
+        <a href="/SanPham/ChiTiet/@item.ID" title="@item.TenSP">
+            <img class="img-responsive chain" src="@item.AnhDaiDien" alt="@item.TenSP" style=" margin-top: -10px; max-height: 150px; float: left; padding-left: 10px;">
+        </a>
+
+        @if (item.GiaKhuyenMai.HasValue)
+        {
+            <div style="position: absolute;right: 12%; top: 30%">
+                <span style="text-decoration: line-through; text-align: left;">@item.Gia.Value.ToString("N0") VNĐ</span>
+                <br />
+                <span class="actual" style="text-align: left;">@item.GiaKhuyenMai.Value.ToString("N0") VNĐ</span>
+            </div>
+        }
+        else
+        {
+            <div style="position: absolute;right: 12%; top: 30%">
+                <span class="actual" style="text-align: left;">@item.Gia.Value.ToString("N0") VNĐ</span>
+            </div>
+        }
+
+
+        <div class="grid-chain-bottom" style="border: none">
+            <h6 style=" background: rgba(0, 0, 0, 0.08); font-size: 15px; line-height: 30px; margin-bottom: 0px; "><a href="/SanPham/ChiTiet/@item.ID" title="@item.TenSP">@item.TenSP</a></h6>
+            <span class="index_of_item" style="border-radius: 30px; color: #fff; background: #ff0000; position: absolute; top: 5%; right: 5%; padding: 8px; width: 35px; text-align: center; height: 35px; font-weight: 700; ">
+                @stt
+            </span>
+
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+}

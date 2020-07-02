@@ -1,0 +1,154 @@
+﻿@{
+    ViewBag.Title = "_layoutClient";
+}
+
+<html>
+<head>
+    <link href="/Assets/Client/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <!--theme-style-->
+    <link href="/Assets/Client/css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="icon" type="image/x-icon" href="/Assets/Client/images/icofavicon.png">
+    <!--//theme-style-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!--fonts-->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet" type="text/css">
+    <!--//fonts-->
+    <script src="/Assets/Client/js/jquery.min.js"></script>
+
+    <link href="/Assets/Client/font-awesome-4.4.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="/Assets/Client/font-awesome-4.4.0/css/font-awesome.css" rel="stylesheet" />
+
+
+    <!--script-->
+    @RenderSection("sectionHeader", required: false)
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function timkiem() {
+            $('#btnSearch').on('click', function () {
+
+                if ($('#txtKeyword').val() == "") {
+                    return false;
+                }
+                else {
+                    window.location.href = '/TimKiem?keyword=' + $('#txtKeyword').val();
+                }
+            });
+            $('#txtKeyword').keypress(function (e) {
+                if (e.which == 13) {
+                    e.preventDefault();
+                    if ($('#txtKeyword').val() == "") {
+                        return false;
+                    }
+                    else {
+                        window.location.href = '/TimKiem?keyword=' + $('#txtKeyword').val();
+                    }
+                }
+            });
+        })
+    </script>
+
+</head>
+<body>
+    <!--header-->
+    <div class="header">
+
+        <div class="bottom-header">
+            <div class="container" style="">
+                <div class="header-bottom-left">
+                    <div class="logo">
+                        <a href="/"><img src="/Assets/Client/images/logo.png" alt="" style="height: 50px;"></a>
+                    </div>
+                    <div class="search">
+                        <input type="text" id="txtKeyword" placeholder="Tìm kiếm sản phẩm theo tên, code hoặc giá sản phẩm" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+                        <input type="submit" id="btnSearch" value="TÌM KIẾM">
+
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="header-bottom-right">
+
+                    <div class="cart"><a href="/GioHang"><span> </span>GIỎ HÀNG</a></div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <!---->
+
+
+    @*MENU*@
+
+    @{Html.RenderAction("Menu", "Home");}
+
+
+
+
+
+    <div class="container" style="min-height: 600px!important;">
+        <div class="shoes-grid">
+            @RenderBody()
+        </div>
+        <div class="sub-cate">
+            <div class="top-nav rsidebar span_1_of_left" style="position: relative;">
+                <h3 class="cate">
+                    DANH MỤC SẢN PHẨM
+
+                    <img src="/Assets/Client/Images/stack-of-paper-png-29963.png" style="width: 35px; position: absolute; top: 0px; right: 10px; z-index: 4000; display: block; color: #fff;;" alt="Alternate Text" />
+                </h3>
+                @{Html.RenderAction("DanhMucSanPhamCha", "Home");}
+            </div>
+
+
+            <div class="top-nav rsidebar span_1_of_left" style="margin-top: 2em;position: relative;">
+                <h3 class="cate">
+                    SẢN PHẨM NỔI BẬT
+                    @*<span style="width: 30px; height: 30px; position: absolute; top: 5px; right: 5px; z-index: 4000; display: block; background-image: url('/Assets/Client/Images/star-8-xxl.png'); "></span>*@
+                    <img src="/Assets/Client/Images/star-8-xxl.png" style="width: 20px; height: 20px; position: absolute; top: 10px; right: 10px; z-index: 4000; display: block;" alt="Alternate Text" />
+                </h3>
+                @{Html.RenderAction("SanPhamNoiBat", "Home");}
+            </div>
+
+
+
+            @RenderSection("sectionLeft", required: false)
+            <!--initiate accordion-->
+            <script type="text/javascript">
+                $(function () {
+                    var menu_ul = $('.menu > li > ul'),
+                           menu_a = $('.menu > li > a');
+                    menu_ul.hide();
+                    menu_a.click(function (e) {
+                        e.preventDefault();
+                        if (!$(this).hasClass('active')) {
+                            menu_a.removeClass('active');
+                            menu_ul.filter(':visible').slideUp('normal');
+                            $(this).addClass('active').next().stop(true, true).slideDown('normal');
+                        } else {
+                            $(this).removeClass('active');
+                            $(this).next().stop(true, true).slideUp('normal');
+                        }
+                    });
+
+                });
+            </script>
+
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+
+    <!---->
+    <div class="footer">
+
+        <div class="footer-bottom">
+            <div class="container">
+                THỰC TẬP LẬP TRÌNH WEB - Desesign by <span style="color: red">NGUYỄN LÊ XUÂN PHƯỚC</span>
+
+            </div>
+        </div>
+    </div>
+    @RenderSection("jsFooter", required: false)
+</body>
+</html>

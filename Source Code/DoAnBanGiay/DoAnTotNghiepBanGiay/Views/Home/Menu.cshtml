@@ -1,0 +1,18 @@
+﻿@model List<Model.EF.MENU>
+
+
+<div class="header">
+    <div class="container" style="">
+            <div class="menu1" style="background: #fff; float: right;">
+                <ul style="margin: 0px;">
+                    @foreach (var item in Model)
+                    {
+                        <li style="float: left; display: inline-block; text-transform: uppercase; height: 40px; line-height: 40px;">
+                            <a href="@item.Link" style="border: none; padding: 0px 15px; font-weight: 400; display: block; text-decoration: none; font-size: 16px;">@item.Ten</a>
+                        </li>
+                    }
+                </ul>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+</div>

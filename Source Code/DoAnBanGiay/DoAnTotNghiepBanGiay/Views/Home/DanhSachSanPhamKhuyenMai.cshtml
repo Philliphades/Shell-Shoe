@@ -1,0 +1,38 @@
+﻿@model List<Model.EF.SANPHAM>
+
+
+
+
+
+<div class="product-left">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-4 chain-grid">
+            <a href="/SanPham/ChiTiet/@item.ID" title="@item.TenSP">
+                <img src="@item.AnhDaiDien" style="max-height: 70%; display: block;" alt="@item.TenSP">
+            </a>
+            <span class="star"></span>
+            <div class="grid-chain-bottom">
+                <h6><a href="/SanPham/ChiTiet/@item.ID" title="@item.TenSP">@item.TenSP</a></h6>
+                <div class="star-price">
+
+                    @*GIÁ SẢN PHẨM*@
+                    @if (@item.GiaKhuyenMai.HasValue)
+                    {
+                        <div class="dolor-grid">
+                            <span class="actual">@item.GiaKhuyenMai.Value.ToString("N0") VNĐ</span>
+                            <span class="reducedfrom">@item.Gia.Value.ToString("N0") VNĐ</span>
+                        </div>
+                    }
+                    else
+                    {
+                        <span class="actual">@item.Gia.Value.ToString("N0") VNĐ</span>
+                    }
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+        </div>
+
+    }
+    <div class="clearfix"> </div>
+</div>

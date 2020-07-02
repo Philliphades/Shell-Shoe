@@ -1,0 +1,106 @@
+﻿@model PagedList.IPagedList<Model.EF.SANPHAM>
+@using PagedList.Mvc;
+
+
+@{
+    ViewBag.Title = "ChoDuyet";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@section sectionhead{
+    <style>
+        th {
+            text-align: center;
+        }
+
+        td.chucnang {
+            text-align: center;
+        }
+    </style>
+}
+
+
+<div class="=row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4>
+                    DANH SÁCH SẢN PHẨM CHỜ DUYỆT
+                </h4>
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+
+                @using (Html.BeginForm("ChoDuyet", "QuanLySanPham", FormMethod.Get))
+                {
+                    <div class="row" style="padding-bottom: 10px!important">
+                        <div class="col-lg-8">
+                            <div class="input-group margin">
+                                <input type="text" class="form-control" value="@ViewBag.SearchString" name="searchString" placeholder="Nhập tên sản phẩm để tìm kiếm...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-info btn-flat" type="submit">Tìm</button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                }
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered table-hover">
+                        <thead>
+                            <tr>
+
+                                <th>Tên sản phẩm</th>
+                                <th>Ảnh đại diện</th>
+                                <th>Giá gốc</th>
+                                <th>Giá khuyến mại</th>
+                                <th>Chức năng</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr id="row_@item.ID">
+
+                                    <td class="tb_tenbanghi">
+                                        <a href="/Admin/QuanLySanPham/XemTruoc/@item.ID" target="_blank">
+                                            @item.TenSP
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <img src="@item.AnhDaiDien" class="img__lpost" alt=" alternate text" />
+                                    </td>
+                                    <td>@item.Gia.Value.ToString("N0")</td>
+                                    @if (item.GiaKhuyenMai.HasValue)
+                                    {
+                                        <td> @item.GiaKhuyenMai.Value.ToString("N0")</td>
+                                    }
+                                    else
+                                    {
+                                        <td></td>
+                                    }
+                                    <td>
+                                        @*<a href="/Admin/ProductManager/@item.Metatitle-@item.ID" class="clink_llll" title="Bỏ duyệt bài đăng này">Bỏ active</a>*@
+                                        @Ajax.ActionLink("Duyệt", "Duyet", new { @id = item.ID }, new AjaxOptions
+                                            {
+                                                Confirm = "Bạn có chắc chắn muốn duyệt sản phẩm này?",
+                                                OnComplete = "$('#row_" + @item.ID + "').fadeOut(300)",
+                                                HttpMethod = "Post"
+                                            }, new { @class = "clink_rrrr", @title = "Duyệt sản phẩm này", area = "Admin" })
+                                        <br />
+                                        <a href="/Admin/QuanLySanPham/CapNhat/@item.ID">Cập nhật</a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+
+
+                    @Html.PagedListPager(Model, page => Url.Action("ChoDuyet", new { page, @searchString = @ViewBag.searchstring }))
+                </div>
+                <!-- /.table-responsive -->
+            </div>
+            <!-- /.panel-body -->
+        </div>
+        <!-- /.panel -->
+    </div>
+</div>

@@ -1,0 +1,152 @@
+E:\Dropbox\Nam 4\Do an tot nghiep\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\DoAnTotNghiepBanGiay.dll.config
+E:\Dropbox\Nam 4\Do an tot nghiep\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\DoAnTotNghiepBanGiay.dll
+E:\Dropbox\Nam 4\Do an tot nghiep\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\DoAnTotNghiepBanGiay.pdb
+E:\Dropbox\Nam 4\Do an tot nghiep\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\CKFinder.dll
+E:\Dropbox\Nam 4\Do an tot nghiep\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\Microsoft.Web.Infrastructure.dll
+E:\Dropbox\Nam 4\Do an tot nghiep\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+E:\Dropbox\Nam 4\Do an tot nghiep\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\Model.dll
+E:\Dropbox\Nam 4\Do an tot nghiep\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\Newtonsoft.Json.dll
+E:\Dropbox\Nam 4\Do an tot nghiep\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\PagedList.dll
+E:\Dropbox\Nam 4\Do an tot nghiep\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\PagedList.Mvc.dll
+E:\Dropbox\Nam 4\Do an tot nghiep\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\System.Net.Http.Formatting.dll
+E:\Dropbox\Nam 4\Do an tot nghiep\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.Helpers.dll
+E:\Dropbox\Nam 4\Do an tot nghiep\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.Http.dll
+E:\Dropbox\Nam 4\Do an tot nghiep\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.Http.WebHost.dll
+E:\Dropbox\Nam 4\Do an tot nghiep\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.Mvc.dll
+E:\Dropbox\Nam 4\Do an tot nghiep\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.Razor.dll
+E:\Dropbox\Nam 4\Do an tot nghiep\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.WebPages.Deployment.dll
+E:\Dropbox\Nam 4\Do an tot nghiep\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.WebPages.dll
+E:\Dropbox\Nam 4\Do an tot nghiep\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.WebPages.Razor.dll
+E:\Dropbox\Nam 4\Do an tot nghiep\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\EntityFramework.dll
+E:\Dropbox\Nam 4\Do an tot nghiep\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\Model.pdb
+E:\Dropbox\Nam 4\Do an tot nghiep\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\CKFinder.pdb
+E:\Dropbox\Nam 4\Do an tot nghiep\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\PagedList.xml
+E:\Dropbox\Nam 4\Do an tot nghiep\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\PagedList.Mvc.xml
+E:\Dropbox\Nam 4\Do an tot nghiep\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\Newtonsoft.Json.xml
+E:\Dropbox\Nam 4\Do an tot nghiep\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\System.Net.Http.Formatting.xml
+E:\Dropbox\Nam 4\Do an tot nghiep\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.Helpers.xml
+E:\Dropbox\Nam 4\Do an tot nghiep\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.Http.xml
+E:\Dropbox\Nam 4\Do an tot nghiep\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.Http.WebHost.xml
+E:\Dropbox\Nam 4\Do an tot nghiep\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.Mvc.xml
+E:\Dropbox\Nam 4\Do an tot nghiep\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.Razor.xml
+E:\Dropbox\Nam 4\Do an tot nghiep\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.WebPages.xml
+E:\Dropbox\Nam 4\Do an tot nghiep\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.WebPages.Deployment.xml
+E:\Dropbox\Nam 4\Do an tot nghiep\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.WebPages.Razor.xml
+E:\Dropbox\Nam 4\Do an tot nghiep\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\EntityFramework.xml
+E:\Dropbox\Nam 4\Do an tot nghiep\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\obj\Debug\DoAnTotNghiepBanGiay.csprojResolveAssemblyReference.cache
+E:\Dropbox\Nam 4\Do an tot nghiep\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\obj\Debug\DoAnTotNghiepBanGiay.dll
+E:\Dropbox\Nam 4\Do an tot nghiep\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\obj\Debug\DoAnTotNghiepBanGiay.pdb
+E:\Documents\DoAn\Nam4\web\Do an tot nghiep - Nguyen Van Hau\Do an tot nghiep - Nguyen Van Hau\01 - Ma nguon\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\DoAnTotNghiepBanGiay.dll.config
+E:\Documents\DoAn\Nam4\web\Do an tot nghiep - Nguyen Van Hau\Do an tot nghiep - Nguyen Van Hau\01 - Ma nguon\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\DoAnTotNghiepBanGiay.dll
+E:\Documents\DoAn\Nam4\web\Do an tot nghiep - Nguyen Van Hau\Do an tot nghiep - Nguyen Van Hau\01 - Ma nguon\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\DoAnTotNghiepBanGiay.pdb
+E:\Documents\DoAn\Nam4\web\Do an tot nghiep - Nguyen Van Hau\Do an tot nghiep - Nguyen Van Hau\01 - Ma nguon\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\CKFinder.dll
+E:\Documents\DoAn\Nam4\web\Do an tot nghiep - Nguyen Van Hau\Do an tot nghiep - Nguyen Van Hau\01 - Ma nguon\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\Microsoft.Web.Infrastructure.dll
+E:\Documents\DoAn\Nam4\web\Do an tot nghiep - Nguyen Van Hau\Do an tot nghiep - Nguyen Van Hau\01 - Ma nguon\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+E:\Documents\DoAn\Nam4\web\Do an tot nghiep - Nguyen Van Hau\Do an tot nghiep - Nguyen Van Hau\01 - Ma nguon\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\Model.dll
+E:\Documents\DoAn\Nam4\web\Do an tot nghiep - Nguyen Van Hau\Do an tot nghiep - Nguyen Van Hau\01 - Ma nguon\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\Newtonsoft.Json.dll
+E:\Documents\DoAn\Nam4\web\Do an tot nghiep - Nguyen Van Hau\Do an tot nghiep - Nguyen Van Hau\01 - Ma nguon\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\PagedList.dll
+E:\Documents\DoAn\Nam4\web\Do an tot nghiep - Nguyen Van Hau\Do an tot nghiep - Nguyen Van Hau\01 - Ma nguon\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\PagedList.Mvc.dll
+E:\Documents\DoAn\Nam4\web\Do an tot nghiep - Nguyen Van Hau\Do an tot nghiep - Nguyen Van Hau\01 - Ma nguon\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\System.Net.Http.Formatting.dll
+E:\Documents\DoAn\Nam4\web\Do an tot nghiep - Nguyen Van Hau\Do an tot nghiep - Nguyen Van Hau\01 - Ma nguon\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.Helpers.dll
+E:\Documents\DoAn\Nam4\web\Do an tot nghiep - Nguyen Van Hau\Do an tot nghiep - Nguyen Van Hau\01 - Ma nguon\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.Http.dll
+E:\Documents\DoAn\Nam4\web\Do an tot nghiep - Nguyen Van Hau\Do an tot nghiep - Nguyen Van Hau\01 - Ma nguon\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.Http.WebHost.dll
+E:\Documents\DoAn\Nam4\web\Do an tot nghiep - Nguyen Van Hau\Do an tot nghiep - Nguyen Van Hau\01 - Ma nguon\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.Mvc.dll
+E:\Documents\DoAn\Nam4\web\Do an tot nghiep - Nguyen Van Hau\Do an tot nghiep - Nguyen Van Hau\01 - Ma nguon\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.Razor.dll
+E:\Documents\DoAn\Nam4\web\Do an tot nghiep - Nguyen Van Hau\Do an tot nghiep - Nguyen Van Hau\01 - Ma nguon\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.WebPages.Deployment.dll
+E:\Documents\DoAn\Nam4\web\Do an tot nghiep - Nguyen Van Hau\Do an tot nghiep - Nguyen Van Hau\01 - Ma nguon\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.WebPages.dll
+E:\Documents\DoAn\Nam4\web\Do an tot nghiep - Nguyen Van Hau\Do an tot nghiep - Nguyen Van Hau\01 - Ma nguon\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.WebPages.Razor.dll
+E:\Documents\DoAn\Nam4\web\Do an tot nghiep - Nguyen Van Hau\Do an tot nghiep - Nguyen Van Hau\01 - Ma nguon\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\EntityFramework.dll
+E:\Documents\DoAn\Nam4\web\Do an tot nghiep - Nguyen Van Hau\Do an tot nghiep - Nguyen Van Hau\01 - Ma nguon\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\Model.pdb
+E:\Documents\DoAn\Nam4\web\Do an tot nghiep - Nguyen Van Hau\Do an tot nghiep - Nguyen Van Hau\01 - Ma nguon\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\CKFinder.pdb
+E:\Documents\DoAn\Nam4\web\Do an tot nghiep - Nguyen Van Hau\Do an tot nghiep - Nguyen Van Hau\01 - Ma nguon\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\PagedList.xml
+E:\Documents\DoAn\Nam4\web\Do an tot nghiep - Nguyen Van Hau\Do an tot nghiep - Nguyen Van Hau\01 - Ma nguon\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\PagedList.Mvc.xml
+E:\Documents\DoAn\Nam4\web\Do an tot nghiep - Nguyen Van Hau\Do an tot nghiep - Nguyen Van Hau\01 - Ma nguon\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\Newtonsoft.Json.xml
+E:\Documents\DoAn\Nam4\web\Do an tot nghiep - Nguyen Van Hau\Do an tot nghiep - Nguyen Van Hau\01 - Ma nguon\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\System.Net.Http.Formatting.xml
+E:\Documents\DoAn\Nam4\web\Do an tot nghiep - Nguyen Van Hau\Do an tot nghiep - Nguyen Van Hau\01 - Ma nguon\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.Helpers.xml
+E:\Documents\DoAn\Nam4\web\Do an tot nghiep - Nguyen Van Hau\Do an tot nghiep - Nguyen Van Hau\01 - Ma nguon\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.Http.xml
+E:\Documents\DoAn\Nam4\web\Do an tot nghiep - Nguyen Van Hau\Do an tot nghiep - Nguyen Van Hau\01 - Ma nguon\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.Http.WebHost.xml
+E:\Documents\DoAn\Nam4\web\Do an tot nghiep - Nguyen Van Hau\Do an tot nghiep - Nguyen Van Hau\01 - Ma nguon\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.Mvc.xml
+E:\Documents\DoAn\Nam4\web\Do an tot nghiep - Nguyen Van Hau\Do an tot nghiep - Nguyen Van Hau\01 - Ma nguon\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.Razor.xml
+E:\Documents\DoAn\Nam4\web\Do an tot nghiep - Nguyen Van Hau\Do an tot nghiep - Nguyen Van Hau\01 - Ma nguon\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.WebPages.xml
+E:\Documents\DoAn\Nam4\web\Do an tot nghiep - Nguyen Van Hau\Do an tot nghiep - Nguyen Van Hau\01 - Ma nguon\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.WebPages.Deployment.xml
+E:\Documents\DoAn\Nam4\web\Do an tot nghiep - Nguyen Van Hau\Do an tot nghiep - Nguyen Van Hau\01 - Ma nguon\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.WebPages.Razor.xml
+E:\Documents\DoAn\Nam4\web\Do an tot nghiep - Nguyen Van Hau\Do an tot nghiep - Nguyen Van Hau\01 - Ma nguon\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\bin\EntityFramework.xml
+E:\Documents\DoAn\Nam4\web\Do an tot nghiep - Nguyen Van Hau\Do an tot nghiep - Nguyen Van Hau\01 - Ma nguon\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\obj\Debug\DoAnTotNghiepBanGiay.csprojResolveAssemblyReference.cache
+E:\Documents\DoAn\Nam4\web\Do an tot nghiep - Nguyen Van Hau\Do an tot nghiep - Nguyen Van Hau\01 - Ma nguon\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\obj\Debug\DoAnTotNghiepBanGiay.dll
+E:\Documents\DoAn\Nam4\web\Do an tot nghiep - Nguyen Van Hau\Do an tot nghiep - Nguyen Van Hau\01 - Ma nguon\DoAnTotNghiepBanGiay\DoAnTotNghiepBanGiay\obj\Debug\DoAnTotNghiepBanGiay.pdb
+E:\Documents\DoAn\Nam4\web\BTL\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\DoAnTotNghiepBanGiay.dll.config
+E:\Documents\DoAn\Nam4\web\BTL\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\DoAnTotNghiepBanGiay.dll
+E:\Documents\DoAn\Nam4\web\BTL\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\DoAnTotNghiepBanGiay.pdb
+E:\Documents\DoAn\Nam4\web\BTL\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\CKFinder.dll
+E:\Documents\DoAn\Nam4\web\BTL\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\Microsoft.Web.Infrastructure.dll
+E:\Documents\DoAn\Nam4\web\BTL\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+E:\Documents\DoAn\Nam4\web\BTL\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\Model.dll
+E:\Documents\DoAn\Nam4\web\BTL\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\Newtonsoft.Json.dll
+E:\Documents\DoAn\Nam4\web\BTL\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\PagedList.dll
+E:\Documents\DoAn\Nam4\web\BTL\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\PagedList.Mvc.dll
+E:\Documents\DoAn\Nam4\web\BTL\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\System.Net.Http.Formatting.dll
+E:\Documents\DoAn\Nam4\web\BTL\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.Helpers.dll
+E:\Documents\DoAn\Nam4\web\BTL\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.Http.dll
+E:\Documents\DoAn\Nam4\web\BTL\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.Http.WebHost.dll
+E:\Documents\DoAn\Nam4\web\BTL\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.Mvc.dll
+E:\Documents\DoAn\Nam4\web\BTL\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.Razor.dll
+E:\Documents\DoAn\Nam4\web\BTL\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.WebPages.Deployment.dll
+E:\Documents\DoAn\Nam4\web\BTL\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.WebPages.dll
+E:\Documents\DoAn\Nam4\web\BTL\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.WebPages.Razor.dll
+E:\Documents\DoAn\Nam4\web\BTL\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\EntityFramework.dll
+E:\Documents\DoAn\Nam4\web\BTL\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\Model.pdb
+E:\Documents\DoAn\Nam4\web\BTL\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\CKFinder.pdb
+E:\Documents\DoAn\Nam4\web\BTL\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\PagedList.xml
+E:\Documents\DoAn\Nam4\web\BTL\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\PagedList.Mvc.xml
+E:\Documents\DoAn\Nam4\web\BTL\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\Newtonsoft.Json.xml
+E:\Documents\DoAn\Nam4\web\BTL\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\System.Net.Http.Formatting.xml
+E:\Documents\DoAn\Nam4\web\BTL\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.Helpers.xml
+E:\Documents\DoAn\Nam4\web\BTL\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.Http.xml
+E:\Documents\DoAn\Nam4\web\BTL\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.Http.WebHost.xml
+E:\Documents\DoAn\Nam4\web\BTL\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.Mvc.xml
+E:\Documents\DoAn\Nam4\web\BTL\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.Razor.xml
+E:\Documents\DoAn\Nam4\web\BTL\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.WebPages.xml
+E:\Documents\DoAn\Nam4\web\BTL\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.WebPages.Deployment.xml
+E:\Documents\DoAn\Nam4\web\BTL\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.WebPages.Razor.xml
+E:\Documents\DoAn\Nam4\web\BTL\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\EntityFramework.xml
+E:\Documents\DoAn\Nam4\web\BTL\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\obj\Debug\DoAnTotNghiepBanGiay.csprojResolveAssemblyReference.cache
+E:\Documents\DoAn\Nam4\web\BTL\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\obj\Debug\DoAnTotNghiepBanGiay.dll
+E:\Documents\DoAn\Nam4\web\BTL\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\obj\Debug\DoAnTotNghiepBanGiay.pdb
+E:\Documents\DoAn\Nam4\web\BTL_Nhom_XuanPhuoc_NhatTri\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\DoAnTotNghiepBanGiay.dll.config
+E:\Documents\DoAn\Nam4\web\BTL_Nhom_XuanPhuoc_NhatTri\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\DoAnTotNghiepBanGiay.dll
+E:\Documents\DoAn\Nam4\web\BTL_Nhom_XuanPhuoc_NhatTri\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\DoAnTotNghiepBanGiay.pdb
+E:\Documents\DoAn\Nam4\web\BTL_Nhom_XuanPhuoc_NhatTri\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\CKFinder.dll
+E:\Documents\DoAn\Nam4\web\BTL_Nhom_XuanPhuoc_NhatTri\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\Microsoft.Web.Infrastructure.dll
+E:\Documents\DoAn\Nam4\web\BTL_Nhom_XuanPhuoc_NhatTri\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+E:\Documents\DoAn\Nam4\web\BTL_Nhom_XuanPhuoc_NhatTri\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\Model.dll
+E:\Documents\DoAn\Nam4\web\BTL_Nhom_XuanPhuoc_NhatTri\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\Newtonsoft.Json.dll
+E:\Documents\DoAn\Nam4\web\BTL_Nhom_XuanPhuoc_NhatTri\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\PagedList.dll
+E:\Documents\DoAn\Nam4\web\BTL_Nhom_XuanPhuoc_NhatTri\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\PagedList.Mvc.dll
+E:\Documents\DoAn\Nam4\web\BTL_Nhom_XuanPhuoc_NhatTri\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\System.Net.Http.Formatting.dll
+E:\Documents\DoAn\Nam4\web\BTL_Nhom_XuanPhuoc_NhatTri\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.Helpers.dll
+E:\Documents\DoAn\Nam4\web\BTL_Nhom_XuanPhuoc_NhatTri\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.Http.dll
+E:\Documents\DoAn\Nam4\web\BTL_Nhom_XuanPhuoc_NhatTri\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.Http.WebHost.dll
+E:\Documents\DoAn\Nam4\web\BTL_Nhom_XuanPhuoc_NhatTri\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.Mvc.dll
+E:\Documents\DoAn\Nam4\web\BTL_Nhom_XuanPhuoc_NhatTri\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.Razor.dll
+E:\Documents\DoAn\Nam4\web\BTL_Nhom_XuanPhuoc_NhatTri\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.WebPages.Deployment.dll
+E:\Documents\DoAn\Nam4\web\BTL_Nhom_XuanPhuoc_NhatTri\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.WebPages.dll
+E:\Documents\DoAn\Nam4\web\BTL_Nhom_XuanPhuoc_NhatTri\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.WebPages.Razor.dll
+E:\Documents\DoAn\Nam4\web\BTL_Nhom_XuanPhuoc_NhatTri\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\EntityFramework.dll
+E:\Documents\DoAn\Nam4\web\BTL_Nhom_XuanPhuoc_NhatTri\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\Model.pdb
+E:\Documents\DoAn\Nam4\web\BTL_Nhom_XuanPhuoc_NhatTri\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\CKFinder.pdb
+E:\Documents\DoAn\Nam4\web\BTL_Nhom_XuanPhuoc_NhatTri\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\PagedList.xml
+E:\Documents\DoAn\Nam4\web\BTL_Nhom_XuanPhuoc_NhatTri\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\PagedList.Mvc.xml
+E:\Documents\DoAn\Nam4\web\BTL_Nhom_XuanPhuoc_NhatTri\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\Newtonsoft.Json.xml
+E:\Documents\DoAn\Nam4\web\BTL_Nhom_XuanPhuoc_NhatTri\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\System.Net.Http.Formatting.xml
+E:\Documents\DoAn\Nam4\web\BTL_Nhom_XuanPhuoc_NhatTri\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.Helpers.xml
+E:\Documents\DoAn\Nam4\web\BTL_Nhom_XuanPhuoc_NhatTri\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.Http.xml
+E:\Documents\DoAn\Nam4\web\BTL_Nhom_XuanPhuoc_NhatTri\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.Http.WebHost.xml
+E:\Documents\DoAn\Nam4\web\BTL_Nhom_XuanPhuoc_NhatTri\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.Mvc.xml
+E:\Documents\DoAn\Nam4\web\BTL_Nhom_XuanPhuoc_NhatTri\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.Razor.xml
+E:\Documents\DoAn\Nam4\web\BTL_Nhom_XuanPhuoc_NhatTri\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.WebPages.xml
+E:\Documents\DoAn\Nam4\web\BTL_Nhom_XuanPhuoc_NhatTri\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.WebPages.Deployment.xml
+E:\Documents\DoAn\Nam4\web\BTL_Nhom_XuanPhuoc_NhatTri\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\System.Web.WebPages.Razor.xml
+E:\Documents\DoAn\Nam4\web\BTL_Nhom_XuanPhuoc_NhatTri\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\bin\EntityFramework.xml
+E:\Documents\DoAn\Nam4\web\BTL_Nhom_XuanPhuoc_NhatTri\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\obj\Debug\DoAnTotNghiepBanGiay.csprojResolveAssemblyReference.cache
+E:\Documents\DoAn\Nam4\web\BTL_Nhom_XuanPhuoc_NhatTri\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\obj\Debug\DoAnTotNghiepBanGiay.dll
+E:\Documents\DoAn\Nam4\web\BTL_Nhom_XuanPhuoc_NhatTri\Source Code\DoAnBanGiay\DoAnTotNghiepBanGiay\obj\Debug\DoAnTotNghiepBanGiay.pdb

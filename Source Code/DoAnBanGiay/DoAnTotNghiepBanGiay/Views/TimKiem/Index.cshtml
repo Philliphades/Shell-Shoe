@@ -1,0 +1,76 @@
+﻿@model PagedList.IPagedList<Model.EF.SANPHAM>
+@using PagedList.Mvc;
+
+
+@{
+    string vb = ViewBag.vbtk;
+    ViewBag.Title = "Tìm kiếm";
+    Layout = "~/Views/Shared/_layoutClient.cshtml";
+}
+
+@section sectionHeader{
+    <style>
+        .shoes-grid {
+            position: relative;
+        }
+    </style>
+}
+
+
+<h3 style="width: 30%; float: left; line-height: 40px;">
+    Kết quả tìm kiếm cho
+</h3>
+<h2 style=" float: right; width: 67%; overflow: hidden; height: 40px; text-overflow: ellipsis; color: red">@vb</h2>
+
+
+<div class="product-left">
+    @if (@Model.Count == 0)
+    {
+
+        <h3 style=" position: absolute; margin: 200px auto !important; left: 35%;">
+            Không tìm thấy kết quả tìm kiếm.
+        </h3>
+    }
+
+    else
+    {
+        foreach (var item in Model)
+        {
+            <div class="col-md-4 chain-grid">
+                <a href="/SanPham/ChiTiet/@item.ID" title="@item.TenSP">
+                    <img style="height: 70%" class="img-responsive chain" src="@item.AnhDaiDien" alt="@item.TenSP">
+                </a>
+                <div class="grid-chain-bottom">
+                    <h6><a href="/SanPham/ChiTiet/@item.ID" title="@item.TenSP">@item.TenSP</a></h6>
+                    <div class="star-price">
+
+                        @*GIÁ SẢN PHẨM*@
+                        @if (@item.GiaKhuyenMai.HasValue)
+                        {
+                            <div class="dolor-grid">
+                                <span class="actual">@item.GiaKhuyenMai.Value.ToString("N0") VNĐ</span>
+                                <span class="reducedfrom">@item.Gia.Value.ToString("N0") VNĐ</span>
+                            </div>
+                        }
+                        else
+                        {
+                            <span class="actual">@item.Gia.Value.ToString("N0") VNĐ</span>
+                        }
+                        <div class="clearfix"> </div>
+                    </div>
+                </div>
+            </div>
+
+        }
+    }
+    <div class="clearfix"> </div>
+</div>
+
+@Html.PagedListPager(Model, page => Url.Action("Index", new { page, @keyword = @ViewBag.vbtk }))
+
+
+
+
+
+
+

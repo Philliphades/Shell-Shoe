@@ -1,0 +1,206 @@
+﻿@model List<DoAnTotNghiepBanGiay.Models.CartItem>
+
+
+
+@{
+    ViewBag.Title = "XemLaiDonHang";
+    Layout = "~/Views/Shared/_layoutClient.cshtml";
+
+    decimal vbtongtien = (decimal)ViewBag.vb_tongtien;
+    var vbcs = (Model.EF.DONHANG)ViewBag.vbCustomer;
+}
+
+@section sectionHeader{
+
+
+    <style>
+        .content {
+            min-height: 300px !important;
+        }
+
+
+        .continue:hover {
+            background: #20AF53 !important;
+        }
+
+        .continue {
+            background: #ea3a3c !important;
+            transition: 0.3s !important;
+            border-right: 1px solid white;
+        }
+
+        a {
+            transition: 0.3s;
+        }
+    </style>
+
+<link href="~/Assets/Client/css/More/Wstyle1.css" rel="stylesheet" />
+<link href="~/Assets/Client/css/More/MyCSS___.css" rel="stylesheet" />
+
+}
+
+
+@section jsFooter{
+
+    <script src="/Assets/Client/js/controller/cartController.js"></script>
+}
+
+
+
+
+<div class="content">
+    <div class="ct-body clearfix" id="cart" style="margin: 30px auto">
+
+
+
+        <div class="ct-right">
+            @if (Model.Count != 0)
+            {
+
+                <div class="block products clearfix">
+                    <div class="block-ct">
+                        <div class="cart-top clearfix">
+                            <div class="row row-th">
+                                <div class="col-md-3"><a href="#">Giỏ hàng</a></div>
+                                <div class="col-md-3 "><a href="#">Thông tin khách hàng</a></div>
+                                <div class="col-md-3 active"><a href="#">Xem lại đơn hàng</a></div>
+                                <div class="col-md-3"><a href="#">Hoàn thành</a></div>
+                            </div><!--End row-->
+
+                            <h3 class="title-cart">Thông tin khách hàng</h3>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    Họ và tên <span class="red">*</span>
+                                </div>
+                                <div class="col-md-9">
+                                    <label class="red">@vbcs.TenKhachHang</label>
+                                </div>
+                            </div><!--row-->
+
+                            <div class="row">
+                                <div class="col-md-3">
+                                    Số điện thoại <span class="red">*</span>
+                                </div>
+                                <div class="col-md-9">
+                                    <label class="red">@vbcs.DienThoaiKhachHang</label>
+                                </div>
+                            </div><!--row-->
+                            <div class="row">
+                                <div class="col-md-3">
+                                    Địa chỉ <span class="red">*</span>
+                                </div>
+                                <div class="col-md-9">
+                                    <label class="red">@vbcs.DiaChiKhachHang</label>
+                                </div>
+                            </div><!--row-->
+                            <div class="row">
+                                <div class="col-md-3">
+                                    Email <span class="red">*</span>
+                                </div>
+                                <div class="col-md-9">
+                                    <label class="red">@vbcs.EmailKhachHang</label>
+                                </div>
+
+                            </div>
+
+                            <h3 class="title-cart">Thông tin đơn hàng</h3>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th style=" width: 160px;">Ảnh</th>
+                                        <th>Cỡ</th>
+                                        <th style="width: 150px;">Số lượng</th>
+                                        <th>Đơn giá</th>
+                                        <th>Tổng tiền</th>
+                                        <th></th>
+                                    </tr>
+
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr class="cartItem" data-id="@item.Product.ID">
+                                            <td>
+                                                <a href="/SanPham/ChiTiet/@item.Product.ID" target="_blank" title="@item.Product.TenSP">
+                                                    <img src="@item.Product.AnhDaiDien" width="100" alt="@item.Product.TenSP">
+
+                                                </a>
+                                                @*<img src="@item.Product.AvatarImage" width="174" alt="">*@
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    @*<a href="/Product/ViewDetailProduct/@item.Product.Metatitle/@item.Product.ID">@item.Product.TenSP</a>*@
+                                                    @item.CoGiay
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <div class="quantity">
+
+                                                    @*<input type="text" class="prquantity" style="display:none" name="name" value=@item.Product.Quantity />*@
+                                                    <input type="text" value="@item.Quantity" data-id="@item.Product.ID" class="quantity-text" readonly="readonly">
+                 
+
+                                                </div><!--End quantity-->
+                                            </td>
+
+                                            @*-----------ĐƠN GIÁ----------------------*@
+                                            @if (item.Product.GiaKhuyenMai.HasValue)
+                                            {
+                                                <td style="text-align:right;"><span class="price row-price" data-price="@item.Product.GiaKhuyenMai.Value.ToString("N0")">@item.Product.GiaKhuyenMai.Value.ToString("N0")</span></td>
+                                            }
+                                            else
+                                            {
+                                                <td style="text-align:right;"><span class="price row-price" data-price="@item.Product.Gia.Value.ToString("N0")">@item.Product.Gia.Value.ToString("N0")</span></td>
+                                            }
+
+                                            @*-----------Thành Tiền----------------------*@
+                                            @if (item.Product.GiaKhuyenMai.HasValue)
+                                            {
+                                                <td style="text-align:right;"><span class="price row-total" data-total="@(@item.Quantity * @item.Product.GiaKhuyenMai)">@((@item.Quantity * @item.Product.GiaKhuyenMai).Value.ToString("N0"))</span></td>
+                                            }
+                                            else
+                                            {
+                                                <td style="text-align:right;"><span class="price row-total" data-total="@(@item.Quantity * @item.Product.GiaKhuyenMai)">@((@item.Quantity * @item.Product.Gia).Value.ToString("N0"))</span></td>
+                                            }
+
+                                            <td></td>
+                                        </tr>
+                                    }
+
+                                    <tr>
+                                        <td colspan="2">&nbsp;</td>
+                                        <td colspan="4" style="text-align:left;" class="border-left">
+                                            <span class="amount">
+                                                Tổng tiền
+                                                @*TỔNG GIÁ TRỊ*@
+                                            </span>
+                                            <span style="color: #ea3a3c; float: right; right: 10px; text-transform: uppercase; font-size: 18px; font-weight: 600;">
+                                                @vbtongtien.ToString("N0") VNĐ
+                                            </span>
+
+                                            <span class="price total-all" data-total-all="">
+                                            </span>
+                                        </td>
+
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div><!--End cart-top-->
+                        <div class="cart-bottom clearfix">
+                            <a href="/GioHang/ThanhCong" class="continue">Chấp nhận<i class="fa fa-check"></i></a>
+                        </div><!--End cart-bottom-->
+
+                    </div><!--End block-ct-->
+                </div><!--End block-->
+
+            }
+            else
+            {
+                <div class="cart-bottom clearfix">
+                    <h2> Giỏ hàng của bạn hiện giờ chưa có sản phẩm!</h2><br /><br />
+                    <a href="/" class="shopping" style="border-right: 1px solid white;"><i class="fa fa-chevron-circle-left"></i>Quay lại mua hàng</a>
+                </div>
+            }
+
+        </div>
+    </div>
+</div>
